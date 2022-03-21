@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - acquia_cms_headless
+id: acms-developer
+label: 'ACMS Developer'
+weight: 3
+is_admin: true
+permissions: {  }

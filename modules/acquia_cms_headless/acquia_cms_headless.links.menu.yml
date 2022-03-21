@@ -1,0 +1,5 @@
+acquia_cms_headless.admin:
+  title: 'API Dashboard'
+  description: 'Displays the API Dashboard page'
+  parent: system.admin_config_services
+  url: internal:/admin/headless/api-dashboard

@@ -1,0 +1,30 @@
+acquia_cms_headless.api-dashboard:
+  path: '/admin/tour/api-dashboard'
+  defaults:
+    _controller: '\Drupal\acquia_cms_headless\Controller\HeadlessController::build'
+  requirements:
+    _permission: 'access acquia cms headless'
+
+acquia_cms_headless.enabled_modules:
+  path: '/admin/headless/api-dashboard'
+  defaults:
+    _controller: '\Drupal\acquia_cms_headless\Controller\DashboardController::content'
+    _title: 'CMS API Dashboard'
+  requirements:
+    _permission: 'access acquia cms api dashboard'
+
+acquia_cms_headless.welcome_modal_form:
+  path: '/admin/headless/api-dashboard/dashboard/welcome-modal-form'
+  defaults:
+    _title: 'Modal Form'
+    _controller: '\Drupal\acquia_cms_headless\Controller\WelcomeModalController::openModalForm'
+  requirements:
+    _permission: 'access acquia cms api dashboard'
+
+acquia_cms_headless.installation_wizard:
+  path: '/acquia-cms-headless/installation-wizard'
+  defaults:
+    _title: 'Acquia CMS API Installation wizard'
+    _form: 'Drupal\acquia_cms_headless\Form\InstallationWizardForm'
+  requirements:
+    _permission: 'access content'

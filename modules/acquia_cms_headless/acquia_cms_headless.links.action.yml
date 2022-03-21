@@ -1,0 +1,5 @@
+entity.acquia_cms_headless.add_form:
+  route_name: 'entity.nextconsumer.add_form'
+  title: 'Add Next Consumer'
+  appears_on:
+    - entity.nextconsumer.collection
